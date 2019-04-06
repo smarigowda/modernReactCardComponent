@@ -6,10 +6,11 @@ console.log(React);
 console.log(ReactDOM);
 
 const App = () => {
+    const text = 'A React App !';
     return (
-        <h1 className="heading">
-            This is a simple React Application.
-        </h1>
+        <div className="heading">
+            {text}
+        </div>
     )
 }
 

@@ -12,7 +12,10 @@ html {
 .heading {
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     height: 100vh;
     color: darkblue;
+    font-size: 5rem;
+    padding: 0 calc(50% - 450px)
 }
