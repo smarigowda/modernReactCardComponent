@@ -83,11 +83,11 @@ body {
 }
 .approve {
     background-color: green;
-    color: white;
+    color: #fafafa;
 }
 .reject {
     background-color: #e41414 ;
-    color: white;
+    color: #fafafa;
 }
 
 .approval-card {
@@ -96,4 +96,7 @@ body {
     background-color: #fafafa;
     border: 1px solid #f1f1f1;
     border-radius: 5px;
+}
+.confirm {
+    text-align: center;
 }
