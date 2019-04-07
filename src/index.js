@@ -1,51 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import faker from 'faker';
+
+
+import Card from './components/Card';
 import './main.scss';
 
 console.log(React);
 console.log(ReactDOM);
 
 const App = () => {
-    const text = 'A React App !';
+    const avatarUrl = faker.image.avatar();
+    console.log(avatarUrl);
     return (
         <div className="container">
-            <div className="comment">
-                <a href="/" className="avatar-container">
-                    <img className="avatar-image" src={faker.image.avatar()} alt="avatar" ></img>
-                </a>
-                <div className="content">
-                    <div className="metadata">
-                        <a className="author" href="/">Santosh Marigowda</a>
-                        <span className="date"> Today at 6 PM</span>
-                    </div>
-                    <div className="text">Nice blog post !</div>
-                </div>
-            </div>
-            <div className="comment">
-                <a href="/" className="avatar-container">
-                    <img className="avatar-image" src={faker.image.avatar()} alt="avatar" ></img>
-                </a>
-                <div className="content">
-                    <div className="metadata">
-                        <a className="author" href="/">Roopa Santosh</a>
-                        <span className="date">Yesterday at 2 PM</span>
-                    </div>
-                    <div className="text">Excellent blog post !</div>
-                </div>
-            </div>
-            <div className="comment">
-                <a href="/" className="avatar-container">
-                    <img className="avatar-image" src={faker.image.avatar()} alt="avatar" ></img>
-                </a>
-                <div className="content">
-                    <div className="metadata">
-                        <a className="author" href="/">Samarth Gowda</a>
-                        <span className="date">Yesterday at 2 PM</span>
-                    </div>
-                    <div className="text">Amazing post, thanks !</div>
-                </div>
-            </div>
+            <Card
+                author="Santosh Marigowda"
+                postedAt="Two days ago"
+                commentText="Nice blog post !"
+                avatarUrl={faker.image.avatar()}
+                />
+            <Card
+                author="Roopa Santosh"
+                postedAt="Today at 6 PM"
+                commentText="Excellent blog post !"
+                avatarUrl={faker.image.avatar()}
+                />
+            <Card
+                author="Samarth Gowda"
+                postedAt="Yesterday at 2 PM"
+                commentText="Amazing post ! Thank you"
+                avatarUrl={faker.image.avatar()}
+                />
         </div>
     )
 }
