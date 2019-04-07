@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import faker from 'faker';
 import './main.scss';
 
 console.log(React);
@@ -11,7 +12,7 @@ const App = () => {
         <div className="container">
             <div className="comment">
                 <a href="/" className="avatar-container">
-                    <img className="avatar-image" src="/avatar-1.jpg" alt="avatar image" ></img>
+                    <img className="avatar-image" src={faker.image.avatar()} alt="avatar" ></img>
                 </a>
                 <div className="content">
                     <div className="metadata">
@@ -23,7 +24,7 @@ const App = () => {
             </div>
             <div className="comment">
                 <a href="/" className="avatar-container">
-                    <img className="avatar-image" src="/avatar-2.png" alt="avatar image" ></img>
+                    <img className="avatar-image" src={faker.image.avatar()} alt="avatar" ></img>
                 </a>
                 <div className="content">
                     <div className="metadata">
@@ -35,7 +36,7 @@ const App = () => {
             </div>
             <div className="comment">
                 <a href="/" className="avatar-container">
-                    <img className="avatar-image" src="/avatar-3.png" alt="avatar image" ></img>
+                    <img className="avatar-image" src={faker.image.avatar()} alt="avatar" ></img>
                 </a>
                 <div className="content">
                     <div className="metadata">

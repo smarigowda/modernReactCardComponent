@@ -26,17 +26,22 @@ body {
 
 .comment {
     display: grid;
+    justify-content: center;
     max-width: 50%;
-    grid-gap: .5rem;
+    // grid-gap: .5rem;
     grid-template-columns: 100px 1fr;
     margin-bottom: 1rem;
     // border: 1px solid black;
 }
 .avatar-image {
-    width: 100%;
+    width: 75%;
     height: 100%;
     object-fit: cover;
-    // padding: .5rem;
+    padding: .5rem;
+    border-radius: 15px;
+}
+.avatar-container {
+    text-align: center;
 }
 .content {
     display: grid;
