@@ -24,10 +24,19 @@ body {
     padding: 0 calc(50% - 450px)
 }
 
+#root {
+    padding: 0 calc(50% - 450px);
+}
+.container {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+
 .comment {
     display: grid;
     justify-content: center;
-    max-width: 50%;
+    // max-width: 50%;
     // grid-gap: .5rem;
     grid-template-columns: 100px 1fr;
     margin-bottom: 1rem;
@@ -56,4 +65,35 @@ body {
 .date {
     margin-left: .5rem;
     color: gray;
+}
+.buttons-container {
+    display: grid;
+    justify-content: space-around;
+    grid-gap: .5rem;
+    grid-template-columns: 100px 100px;
+    margin-left: 1rem;
+}
+.button {
+    border: none;
+    padding: .5rem;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: azure;
+}
+.approve {
+    background-color: green;
+    color: white;
+}
+.reject {
+    background-color: #e41414 ;
+    color: white;
+}
+
+.approval-card {
+    margin: 2rem;
+    padding: 2.5rem;
+    background-color: #fafafa;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
 }
