@@ -26,10 +26,11 @@ body {
 
 .comment {
     display: grid;
-    max-width: 20%;
+    max-width: 50%;
     grid-gap: .5rem;
-    grid-template-columns: 100px 200px;
-    border: 1px solid black;
+    grid-template-columns: 100px 1fr;
+    margin-bottom: 1rem;
+    // border: 1px solid black;
 }
 .avatar-image {
     width: 100%;
@@ -44,5 +45,10 @@ body {
 .author {
     // text-align: center;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.date {
+    margin-left: .5rem;
+    color: gray;
 }
